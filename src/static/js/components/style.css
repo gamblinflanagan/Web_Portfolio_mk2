@@ -1,0 +1,459 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+			overflow: hidden;
+			/*position: relative;*/
+			min-width: 100%;
+			min-height: 820px;
+			background-color: black;
+			background-image: url(https://wallpaperaccess.com/full/473140.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	@media only screen and (max-width: 1100px) {
+		body {
+			background-image: url(https://cdn.wallpapersafari.com/50/27/z5gSXj.jpg);
+		}
+	}
+
+/* HOME PAGE */
+
+		.Home {
+			color: white;
+            padding-bottom: 20px;
+		}
+		@media only screen and (max-width: 1100px) {
+			.Home {
+				background-color: black;
+			}
+		}
+		.Home #background {
+			width: 50%;
+			max-width: 400px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+			.HomeContainer {
+            /*background-color: dodgerblue;*/
+            margin-top: 0;
+            width: 100%;
+            overflow-x: hidden;
+            font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+	  	}
+
+		.HomeContainer #background {
+			border-radius: 12px;
+		}
+
+		.Content {
+			max-width: 500px;
+			/*color: white;*/
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.Content #profile {
+			width: 40%;
+			border-radius: 50%;
+		}
+
+		.Content #more {
+			color: dodgerblue;
+		}
+
+
+/* NAV BAR */
+		.Nav {
+			width: 100%;
+			height: 100px;
+			/*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9eh4ao27MhfvIqiZ-tYii6yMlzCywMbUOcg&usqp=CAU);
+			*/
+			background-color: black;
+		}
+
+		.Menu {
+			display: none;
+		}
+
+		.buttons {
+			
+			float: right;
+			margin-top: 25px;
+			display: inline-block;
+			text-align: center;
+			margin-right: 0;
+			/*
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			/*width: 75%; /
+			height: 100%;
+			margin-left: auto;
+			*/
+		}
+		
+		.links {
+			margin-right: 20px;
+		}
+				
+		.login-button {
+			background-color:black;
+			border: none;
+			color: white;
+			padding: 10px 52px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 12px;
+			cursor: pointer;
+			font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			border: 2px solid dodgerblue;
+		}
+
+		.login-button:hover {
+			background-color: dodgerblue;
+			border: 2px solid dodgerblue;
+		}
+
+		@media only screen and (max-width: 1024px) {
+			
+			.Nav {
+				position: relative;
+				background-color: #1a1a1a;
+			}
+			
+			.Menu {
+				display: block;
+				color: white;
+				margin-top: 10px;
+				float: right;
+				/*
+				position: absolute;
+				top: 5%;
+				transform: translate(600%, -50%);
+				z-index: 100;
+				*/
+			}
+
+			.nav-button {
+				background-color: black;
+				cursor: pointer;
+				margin-right: 25px;
+				width: 80px;
+				height: 80px;
+				border: 2px solid  white;
+				border-radius: 25px;
+			}
+
+			.nav-button hr {
+				width: 50%;
+				height: 5px;
+				border-radius: 25px;
+				background: white;
+				margin-top: 0;
+				margin-bottom: 5px;
+				margin-right: 25%;
+				margin-left: 25%;
+			}
+
+			.nav-button #topline {
+				margin-top: 4px;
+			}
+
+			.buttons #x {
+				margin-top: 10px;
+				margin-bottom: 0;
+				float: right;
+				
+				background-color: black;
+				cursor: pointer;
+				margin-right: 25px;
+				width: 80px;
+				height: 80px;
+				border: 2px solid  dodgerblue;
+				border-radius: 50px;
+
+			}
+
+			.xlines {
+				margin-left: 25%;
+				margin-right: 25%;
+				margin-bottom: 6px;
+			}
+
+			.xlines hr {
+				width: 40px;
+				height: 5px;
+				border-radius: 25px;
+				background: white;
+				margin: 0;
+			}
+
+			/* y axis x axis +right, +up*/  
+			.xlines #topx {
+				position: absolute;
+				transform: rotate(45deg);
+			}
+
+			.xlines #bottomx {
+				position: absolute;
+				transform: rotate(135deg);
+			}
+			
+			.buttons {
+				display: none;
+				float: none;
+				margin-top: 0;
+				/*change class to look like mobile and button will display it*/
+				position: fixed;
+				background-color: #1a1a1a;
+				height: 100vh;
+				width: 100%;
+				flex-direction: column;
+				clip-path: circle(1000px at 90% -10%);
+				-webkit-clip-path: circle(1000px at 90% -10%);
+				transition: all 1s ease-out;
+				/*pointer-events: none;*/
+			}
+
+			.buttons.open {
+				clip-path: circle(1000px at 90% -10%);
+				-webkit-clip-path: circle(1000px at 90% -10%);
+				/*pointer-events: all;*/
+			}
+
+			.links {
+				
+				margin: 125px;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+			}
+
+			.links-top {
+				margin: 125px;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+			}
+
+		}
+/*
+		@media only screen and (max-height: 667px) {
+			.links {
+				margin: 100px;
+			}
+
+			.links-top {
+				margin-top: 100px;
+				margin-bottom: 100px;
+			}
+		}
+*/
+		@media only screen and (max-height: 667px) {
+			.links {
+				margin: 50px;
+			}
+
+			.links-top {
+				margin-top: 100px;
+				margin-bottom: 50px;
+			}
+		}
+
+/* ABOUT PAGE */
+
+		@media only screen and (min-height: 850px) {
+			.About {
+				height: 1486px;
+			}
+		}
+
+		@media only screen and (max-width: 768px) {
+			.About {
+				background-size: 350%;
+			}
+		}
+		
+		.Scroll {
+			display: block;
+			color: white;
+			text-align: center;
+			font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			position: absolute;
+			width: 75%;
+			height: 70%;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -10%);
+			overflow-y: scroll;
+		}
+
+		::-webkit-scrollbar {
+			width: 0;
+		}
+
+		@media only screen and (max-width: 414px) {
+			.Scroll {
+				width: 90%;
+			}
+		}
+
+		.ResumeContainer {
+			  text-align: left;
+		}
+
+		.ResumeSummary {
+			margin-bottom: 40px;
+		}
+
+		.ResumeSummary p {
+			margin-bottom: 20px;
+		}
+
+		.ResumeSkills {
+			margin-bottom: 250px;
+		}
+
+		.ResumeSkills #leftskills {
+			margin-left: 5%;
+			float: left;
+		}
+
+		.ResumeSkills #rightskills {
+			margin-left: 5%;
+			float: right;
+		}
+
+		.XpDescrip {
+			margin-left: 5%;
+		}
+
+		@media only screen and (max-width: 797px) {
+			
+			.ResumeSkills {
+				margin-bottom: 430px;
+			}
+
+			.ResumeSkills #rightskills {
+				float: left;
+				margin-top: 0;
+			}
+
+			.ResumeSkills #leftskills {
+				margin-bottom: 0;
+			}
+		}
+
+		.Experience {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+
+		.Experience h2 {
+			margin-bottom: 20px;
+		}
+
+		.Experience h4 {
+			margin-top: 20px;
+		}
+
+/* Projects PAGE */
+
+@media only screen and (min-height: 850px) {
+	.Projects {
+		height: 1486px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.Projects {
+		background-size: 350%;
+	}
+}
+
+
+.ProjectsContainer {
+	text-align: left;
+}
+
+.ProjectsContainer #title {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.Alarm {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.Alarm h2 {
+	color: dodgerblue;
+}
+
+.TicTacToe {
+	margin-right: 0;
+}
+
+.ProjectList {
+	margin-top: 125px;
+}
+
+.ProjectList #project {
+	margin-top: 25px;
+}
+
+@media only screen and (max-width: 1373px) {
+	
+	.Alarm {
+		margin-bottom: 20px;
+	}
+
+	
+}
+
+
+
+
+
+/* Contact PAGE */
+
+@media only screen and (min-height: 850px) {
+	.Contact {
+		height: 1486px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.Contact {
+		background-size: 350%;
+	}
+}		
+
+.ContactContainer h1 {
+	margin-bottom: 50px;
+}
+
+.ContactContainer h2 {
+	margin-top: 25px;
+}
+
+.Social {
+	text-align: center;
+	color: dodgerblue;
+	display: flex;
+	justify-content: center;
+}
+
+.Social h5 {
+	margin: 10px;
+}
