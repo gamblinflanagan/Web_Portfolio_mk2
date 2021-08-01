@@ -34,7 +34,7 @@ body {
 		}
 		.Home #background {
 			width: 50%;
-			max-width: 400px;
+			max-width: 200px;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
@@ -291,7 +291,7 @@ body {
 			font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 			position: absolute;
 			width: 75%;
-			height: 70%;
+			height: 75%;
 			top: 30%;
 			left: 50%;
 			transform: translate(-50%, -10%);
