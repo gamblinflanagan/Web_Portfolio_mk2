@@ -45,7 +45,7 @@ const projects = [
     {
         name: "Web Template",
         link: "https://github.com/gamblinflanagan/Web_Template",
-        desc: "My Web Template for all web projects (including this website) as of 2021"
+        desc: "My Web Template for all Flask/React web projects"
     },
     {
         name: "Chit Chat Messaging",
@@ -216,7 +216,7 @@ const ProjectsComponent = () => {
                                         </Col>
                                         <Col md>
                                             <div className="TicTacToe">
-                                                <h2>RPA Tic Tac Toe</h2>
+                                            <h2><a target="_blank" href="https://github.com/gamblinflanagan/RPA_tic_tac_toe">RPA TIC TAC TOE</a></h2>
                                                 <ResponsiveEmbed aspectRatio="16by9">
                                                     <iframe 
                                                         className ="Vid" 

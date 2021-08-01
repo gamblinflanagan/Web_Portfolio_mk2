@@ -125,7 +125,7 @@ const AboutComponent = () => {
             <Container id="AboutContent" className="Scroll">
                 <Row>
                     <Col md>
-                    <a id="PDF" target="_blank" href="https://drive.google.com/file/d/1lR8W1QKoN_xVXNDip8h6drlVSRmcOj16/view?usp=sharing" style={{ color: "dodgerblue" }}>Download PDF version here</a>
+                    <a id="PDF" target="_blank" href="https://drive.google.com/file/d/1g59H5fVOdHSKVDsHdgYaRa_AxZvkGeTV/view?usp=sharing" style={{ color: "dodgerblue" }}>Download PDF version here</a>
                         <div className="ResumeContainer">	
                             {/*}
                             <div className="Vid">
@@ -142,7 +142,12 @@ const AboutComponent = () => {
                             <div className="ResumeSummary">
                                 <h2>About me</h2>
                                 <p>
-                                    Self-motivated and creative computer science professional passionate about coding. Seeking an opportunity to utilize my experience and skills to contribute in a collaborative environment.
+                                I am currently an Automation Test Specialist with a Bachelor of Science degree in Computer
+Science from the New Jersey Institute of Technology. During my curriculum I gained key
+knowledge and experience in the field of Computer Science, and I became effective at
+self-learning, adapting to any new changes, analyzing the situation and communicating
+proactively to ensure not just success on my part, but success for the project as a whole.
+Currently my strongest technical skills are Python, and React js
                                 </p>
                                 <h2>Education</h2>
                                 <p>
@@ -150,19 +155,19 @@ const AboutComponent = () => {
                                 </p>   
                             </div>
                             <div className="ResumeSkills">
-                                <h2>Relevant Skills</h2>
+                                <h2>All Relevant Skills</h2>
                                 <ul id="leftskills">
                                     <li>Windows/Mac Os/Linux</li>
                                     <li>Python</li>
                                     <li>Flask/Django</li>
                                     <li>HTML/CSS/PHP/JavaScript/XML</li>
-                                    <li>Node.js/React.js</li>
+                                    <li>Node.js/React.js/React Native</li>
                                     <li>REST APIs</li>
                                     <li>mySQL/postgreSQL</li>
                                     <li>Java/Groovy</li>
                                 </ul>
                                 <ul id="rightskills">
-                                    <li>WorkFusion</li>
+                                    <li>WorkFusion/Selenium</li>
                                     <li>Robotic Processing Automation (RPA)</li>
                                     <li>Data Structures/Algorithms</li>
                                     <li>C/C++/C#</li>
@@ -174,7 +179,7 @@ const AboutComponent = () => {
                             </div>
                             <div className="Experience">
                                 <h2>Professional Experience</h2>
-                                <h4>New Jersey Institute of Technology Media Technology Support Services</h4>
+                                {/*<h4>New Jersey Institute of Technology Media Technology Support Services</h4>
                                 <h5>Special Event/Delivery Technician</h5>
                                 <ul className="XpDescrip">
                                     <li>Executed and managed, of at least 40 online and offline classes and multiple special events, the facilitation of
@@ -189,13 +194,18 @@ my ability whichever equipment is not.</li>
                                     <li>Oversee the delivery portion of the department</li>
                                     <li>Handle any disputes between employees and clients in a professional and personable manner</li>
                                     <li>Provide Support for all and train newer employees</li>
-                                </ul>
-                                <h4>Kashmir World Foundation</h4>
-                                <h5>Ai Engineer-Machine Learning Intern</h5>
+                                </ul>*/}
+                                <h4>IBM</h4>
+                                <h5>Automation Test Specialist</h5>
                                 <ul className="XpDescrip">
-                                    <li>Use Deep Learning algorithms for surveillance drones to help create a map of snow leopards’ habitat based on
-their behavior.</li>
+                                    <li>Design and create tests(automated and manual), test data and test environments using tools
+such as Selenium, Protractor, Katalon, Cucumber, etc.</li>
+                                    <li>Identify, analyze, and document all errors and validate successes for any software solution</li>
+                                    <li>Verify fixes after they are applied to a test system and verifying the results of test cases</li>
+                                    <li>Contribute to the continuous improvement of processes</li>
+                                    <li>Analyze and present test results to clients and project teams clearly</li>
                                 </ul>
+
                                 <h4>Selective Insurance</h4>
                                 <h5>Ignite Intern</h5>
                                 <ul className="XpDescrip">
@@ -207,11 +217,16 @@ business forward by making sound decisions and developing creative solutions.</l
                                 </ul>
                                 <h5>Seasonal Support</h5>
                                 <ul className="XpDescrip">
-                                    <li>Help team design build and update any Corporate Systems applications.</li>
-                                    <li>Provide support for future RPA projects.</li>
-                                    <li>Foster Sense of collaboration, demonstrate self-awareness and understand company strategy, and drive
-business forward by making sound decisions and developing creative solutions.</li>
+                                    <li>Same as Above</li>
                                 </ul>
+
+                                <h4>Kashmir World Foundation</h4>
+                                <h5>Ai Engineer-Machine Learning Intern</h5>
+                                <ul className="XpDescrip">
+                                    <li>Use Deep Learning algorithms for surveillance drones to help create a map of snow leopards’ habitat based on
+their behavior.</li>
+                                </ul>
+                               
                                 <h2>Certifications</h2>
                                 <ul className="XpDescrip">
                                     <li><a target="_blank" href="https://drive.google.com/file/d/10gUvzAh5u-311tXYVSQo0zmjoiNDZePl/view?usp=sharing" style={{ color: "dodgerblue" }}>Work Fusion Power User</a></li>
