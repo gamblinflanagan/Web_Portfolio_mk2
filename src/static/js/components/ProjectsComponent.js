@@ -41,75 +41,127 @@ function ChangeVis() {
     }
 }
 
-const projects = [
+const leftProjects = [
     {
-        name: "Web Template",
+        link: "https://github.com/gamblinflanagan/Alarm-Clock",
+        title: "Alaram Clock",
+        video: "https://drive.google.com/file/d/1tG5X7ZEjV32QcS-5zpbjmydlMfrDcDV0/preview",
+        descip: "IOS AND ANDROID VERSION COMING SOON, currently only available on mac os platforms At a time set by the user a random classical song will play and the voice will tell the user the exact date, time, and weather specific to the set location. The greeting ie: (Good morning sir, I hope you slept well sir) is completley customizeable for the user.",
+    },
+    {
+        link: "https://github.com/gamblinflanagan/RPA_tic_tac_toe",
+        title: "RPA TIC TAC TOE",
+        video: "https://drive.google.com/file/d/1wOKY-LRrWboREnhY6RBZPKxNz42KfFvi/preview",
+        descip: "The RPA bot will open the tic tac toe website and play the AI usng the minimax algorithm to decide its move Works on all Windows platforms with Workfusion installed.",
+    },
+    {
         link: "https://github.com/gamblinflanagan/Web_Template",
-        desc: "My Web Template for all Flask/React web projects"
+        title: "Web Template",
+        video: "",
+        descip: "My Web Template for all Flask/React web projects",
     },
     {
-        name: "Chit Chat Messaging",
-        link: "https://github.com/gamblinflanagan/CS490_Project2m3-jcf29",
-        desc: "Flask/React Web chat app I designed and built my senior year of college"
-    },
-    {
-        name: "Magic 8 Ball",
         link: "https://github.com/gamblinflanagan/Magic-8-Ball",
-        desc: "Swift IOS app of magic 8 ball toy, it knows the answer to any yes or no question"
+        title: "Magic 8 Ball",
+        video: "",
+        descip: "Swift IOS app of magic 8 ball toy, it knows the answer to any yes or no question",
     },
     {
-        name: "Rubix Cube",
-        link: "https://github.com/gamblinflanagan/2x2_RubixCube",
-        desc: "A C app of the classic 2x2 rubix cube"
-    },
-    {
-        name: "Rock Paper Scissors Lizard Spock",
-        link: "https://github.com/gamblinflanagan/RPSLS",
-        desc: "Python app of the classic big bang theory game rock paper scissors lizard spock"
-    },
-    {
-        name: "Binary, Decimal, Hexidecimal Converter",
         link: "https://github.com/gamblinflanagan/binary-dec-hex",
-        desc: "Python app that takes a number of the decimal, hexadecimal, or binary systems and coverts it to the other 2 systems"
+        title: "Binary, Decimal, Hexidecimal Converter",
+        video: "",
+        descip: "Python app that takes a number of the decimal, hexadecimal, or binary systems and coverts it to the other 2 systems",
     },
     {
-        name: "Roulette",
-        link: "https://github.com/gamblinflanagan/roulette",
-        desc: "Java app of classic casino game roulette"
+        link: "https://cs490-project1-jcf29.herokuapp.com",
+        title: "Recipe Website",
+        video: "",
+        descip: "Flask app that displays random recipe from API and displays tweets about it",
     },
     {
-        name: "Programming Language Compiler",
-        link: "https://github.com/gamblinflanagan/compiler",
-        desc: "C++ app of a classic C based language compiler"
-    },
-    {
-        name: "Recipe Website",
-        link: "https://github.com/gamblinflanagan/CS490_Project1-jcf29",
-        desc: "Flask app that displays random recipe from API and displays tweets about it"
-    },
-    {
-        name: "Pig Dice Game",
         link: "https://github.com/gamblinflanagan/pigdice",
-        desc: "Python app of classic Pig Dice game"
-    },
-    {
-        name: "Dice",
-        link: "https://github.com/gamblinflanagan/Dice",
-        desc: "IOS app that rolls two 6 sided dice"
-    },
-    {
-        name: "Even More",
-        link: "https://github.com/gamblinflanagan/",
-        desc: ""
+        title: "Pig Dice Game",
+        video: "",
+        descip: "Python app of classic Pig Dice game",
     },
 ]
 
-const lst_final = projects.map(project => (
+const rightProjects = [
+    {
+        link: "https://nj-homeless-donation-website.web.app",
+        title: "NJ Homeless Donation site",
+        video: "",
+        descip: "",
+    },
+    {
+        link: "https://cs490-project2m2-jcf29.herokuapp.com",
+        title: "Chit Chat Messaging",
+        video: "",
+        descip: "Flask/React Web chat app I designed and built my senior year of college",
+    },
+    {
+        link: "https://github.com/gamblinflanagan/2x2_RubixCube",
+        title: "Rubix Cube",
+        video: "",
+        descip: "A C app of the classic 2x2 rubix cube",
+    },
+    {
+        link: "https://github.com/gamblinflanagan/RPSLS",
+        title: "Rock Paper Scissors Lizard Spock",
+        video: "",
+        descip: "Python app of the classic big bang theory game rock paper scissors lizard spock",
+    },
+    {
+        link: "https://github.com/gamblinflanagan/roulette",
+        title: "Roulette",
+        video: "",
+        descip: "Java app of classic casino game roulette",
+    },
+    {
+        link: "https://github.com/gamblinflanagan/compiler",
+        title: "Programming Language Compiler",
+        video: "",
+        descip: "Java app of classic casino game roulette",
+    },
+    {
+        link: "https://github.com/gamblinflanagan/Dice",
+        title: "Dice",
+        video: "",
+        descip: "IOS app that rolls two 6 sided dice",
+    },
+]
+
+const left_proj_final = leftProjects.map(project => (
     <li id="project">
-        <h4>
-            <a target="_blank" href={project.link}>{project.name}</a>
-        </h4>
-        <p>{project.desc}</p>
+        <h2>
+            <a target="_blank" href={project.link}>{project.title}</a>
+        </h2>
+        <ResponsiveEmbed aspectRatio="16by9">
+            <iframe 
+                className="Vid" 
+                src={project.video} 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen={true}
+            ></iframe>
+        </ResponsiveEmbed>
+        <p>{project.descip}</p>
+    </li>
+))
+
+const right_proj_final = rightProjects.map(project => (
+    <li id="project">
+        <h2>
+            <a target="_blank" href={project.link}>{project.title}</a>
+        </h2>
+        <ResponsiveEmbed aspectRatio="16by9">
+            <iframe 
+                className="Vid" 
+                src={project.video} 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen={true}
+            ></iframe>
+        </ResponsiveEmbed>
+        <p>{project.descip}</p>
     </li>
 ))
 
@@ -195,47 +247,22 @@ const ProjectsComponent = () => {
                 <Row>
                     <Col md>
                         <div className="ProjectsContainer">
-                            <h1 id="title">Top 2 Projects</h1>
+                            <h1 id="title">ALL Projects</h1>
                             <div className="TopProjects">
                                 <Container>
                                     <Row>
                                         <Col md>
-                                            <div className="Alarm">
-                                                <h2><a target="_blank" href="https://github.com/gamblinflanagan/Alarm-Clock">Alaram Clock</a></h2>
-                                                <ResponsiveEmbed aspectRatio="16by9">
-                                                    <iframe 
-                                                        className="Vid" 
-                                                        src="https://drive.google.com/file/d/1tG5X7ZEjV32QcS-5zpbjmydlMfrDcDV0/preview" 
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowFullScreen={true}
-                                                    ></iframe>
-                                                </ResponsiveEmbed>
-                                                <p>IOS AND ANDROID VERSION COMING SOON, currently only available on mac os platforms</p>
-                                                <p>At a time set by the user a random classical song will play and the voice will tell the user the exact date, time, and weather specific to the set location. The greeting ie: (Good morning sir, I hope you slept well sir) is completley customizeable for the user.</p>
+                                            <div className="LeftProjList">
+                                                <ul>{left_proj_final}</ul>
                                             </div>
                                         </Col>
                                         <Col md>
-                                            <div className="TicTacToe">
-                                            <h2><a target="_blank" href="https://github.com/gamblinflanagan/RPA_tic_tac_toe">RPA TIC TAC TOE</a></h2>
-                                                <ResponsiveEmbed aspectRatio="16by9">
-                                                    <iframe 
-                                                        className ="Vid" 
-                                                        src="https://drive.google.com/file/d/1wOKY-LRrWboREnhY6RBZPKxNz42KfFvi/preview"
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowFullScreen={true}
-                                                    ></iframe>
-                                                </ResponsiveEmbed>
+                                            <div className="RightProjList">
+                                                <ul>{right_proj_final}</ul>
                                             </div>
-                                            <p>COMING SOON the ability to play my bot on this webiste.</p>
-                                            <p>Works on all Windows platforms with <a target="_blank" href="https://www.workfusion.com">Workfusion</a> installed.</p>
-                                            <p>The RPA bot will open the tic tac toe website and play the AI usng the minimax algorithm to decide its move.</p>
                                         </Col>
                                     </Row>
                                 </Container>
-                            </div>
-                            <div className="ProjectList">
-                                <h2>Other Projects with links</h2>
-                                <ul>{lst_final}</ul>
                             </div>
                         </div>
                     </Col>

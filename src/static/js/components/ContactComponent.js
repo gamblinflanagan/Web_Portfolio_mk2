@@ -19,6 +19,9 @@ function usewindowSize () {
 }
 */
 
+//Contact Form
+//https://victorbruce82.medium.com/how-to-send-emails-to-a-custom-smtp-server-using-react-and-emailjs-no-server-side-code-d9093e488c73
+
 function ChangeVis() {
     const content = document.getElementById("ContactContent");
     const nav = document.getElementById("nav");

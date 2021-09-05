@@ -155,7 +155,7 @@ const MainComponent = () => {
                             <div className="Content">
                                 <img id="profile" src={profile} />
                                 <p>
-                                    I am Joey Flanagan. I am an NJIT alumni and currently an Automation Test Engineer at IBM.
+                                    I am Joey Flanagan. I am an NJIT alumni and currently an Automation Test Engineer at IBM as well as a freelance Web developer.
                                     More About Me in the <Link id="more" to='/about'>Resume Page</Link>
                                 </p>
                             </div> 

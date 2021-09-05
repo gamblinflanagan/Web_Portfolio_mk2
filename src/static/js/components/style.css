@@ -391,17 +391,21 @@ body {
 	text-align: center;
 }
 
-.Alarm {
+.LeftProjList {
 	margin-left: 0;
 	margin-right: 0;
 }
 
-.Alarm h2 {
-	color: dodgerblue;
+.LeftProjList ul {
+	list-style: none;
 }
 
-.TicTacToe {
+.RightProjList {
 	margin-right: 0;
+}
+
+.RightProjList ul {
+	list-style: none;
 }
 
 .ProjectList {
