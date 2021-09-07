@@ -55,12 +55,6 @@ const leftProjects = [
         descip: "The RPA bot will open the tic tac toe website and play the AI usng the minimax algorithm to decide its move Works on all Windows platforms with Workfusion installed.",
     },
     {
-        link: "https://github.com/gamblinflanagan/Web_Template",
-        title: "Web Template",
-        video: "",
-        descip: "My Web Template for all Flask/React web projects",
-    },
-    {
         link: "https://github.com/gamblinflanagan/Magic-8-Ball",
         title: "Magic 8 Ball",
         video: "https://drive.google.com/file/d/1IO73CvwRjJYf9km5O-8TR44AmXqzDVuo/preview",
@@ -116,12 +110,6 @@ const rightProjects = [
         title: "Roulette",
         video: "https://drive.google.com/file/d/1ZRguw79R0KfyLptxZ5Bh28zRWjns9CXu/preview",
         descip: "Java app of classic casino game roulette",
-    },
-    {
-        link: "https://github.com/gamblinflanagan/compiler",
-        title: "Programming Language Compiler",
-        video: "",
-        descip: "A programming langage complier (not language specific) that i created in c++ my junior year of college",
     },
     {
         link: "https://github.com/gamblinflanagan/Dice",
