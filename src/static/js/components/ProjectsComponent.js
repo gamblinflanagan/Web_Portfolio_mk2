@@ -44,7 +44,7 @@ function ChangeVis() {
 const leftProjects = [
     {
         link: "https://github.com/gamblinflanagan/Alarm-Clock",
-        title: "Alaram Clock",
+        title: "Alarm Clock",
         video: "https://drive.google.com/file/d/1tG5X7ZEjV32QcS-5zpbjmydlMfrDcDV0/preview",
         descip: "IOS AND ANDROID VERSION COMING SOON, currently only available on mac os platforms At a time set by the user a random classical song will play and the voice will tell the user the exact date, time, and weather specific to the set location. The greeting ie: (Good morning sir, I hope you slept well sir) is completley customizeable for the user.",
     },
