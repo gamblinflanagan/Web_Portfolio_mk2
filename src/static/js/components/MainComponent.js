@@ -127,17 +127,17 @@ const MainComponent = () => {
                             Home
                         </Button>
                     </Link>
-                    <Link className="links" to='/about'>
+                    <Link className="mlinks" to='/about'>
                         <Button className="login-button">
                             Resume
                         </Button>
                     </Link>
-                    <Link className="links" to='/projects'>
+                    <Link className="mlinks" to='/projects'>
                     <   Button className="login-button">
                             Projects
                         </Button>
                     </Link>
-                    <Link className="links" to='/contact'>
+                    <Link className="mlinks" to='/contact'>
                         <Button className="login-button">
                             Contact
                         </Button>

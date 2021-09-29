@@ -231,7 +231,7 @@ body {
 				/*pointer-events: all;*/
 			}
 
-			.links {
+			.mlinks {
 				
 				margin: 125px;
 				display: flex;
@@ -259,8 +259,9 @@ body {
 			}
 		}
 */
+
 		@media only screen and (max-height: 667px) {
-			.links {
+			.mlinks {
 				margin: 50px;
 			}
 
@@ -269,6 +270,7 @@ body {
 				margin-bottom: 50px;
 			}
 		}
+
 
 /* ABOUT PAGE */
 
