@@ -69,7 +69,7 @@ const leftProjects = [
     {
         link: "https://cs490-project1-jcf29.herokuapp.com",
         title: "Recipe Website",
-        video: "https://drive.google.com/file/d/1EdpoevDHmmvncLY--8QS_YpRQae07_RG/preview",
+        video: "https://drive.google.com/file/d/1j4YFFWthdL6OW1NkNBvBPFSeFp79hYId/preview",
         descip: "Flask app that displays random recipe from API and displays tweets about it",
     },
     {
