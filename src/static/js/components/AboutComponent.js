@@ -142,8 +142,8 @@ const AboutComponent = () => {
                             <div className="ResumeSummary">
                                 <h2>About me</h2>
                                 <p>
-                                I am currently an Automation Test Specialist with a Bachelor of Science degree in Computer
-Science from the New Jersey Institute of Technology. During my curriculum I gained key
+                                I am currently an Automation Test Specialist at IBM as well as a freelance web developer. I have a Bachelor of Science degree in Computer
+Science from the <a target="_blank" href="https://www.njit.edu">New Jersey Institute of Technology. </a> During my curriculum I gained key
 knowledge and experience in the field of Computer Science, and I became effective at
 self-learning, adapting to any new changes, analyzing the situation and communicating
 proactively to ensure not just success on my part, but success for the project as a whole.
@@ -229,6 +229,7 @@ their behavior.</li>
                                
                                 <h2>Certifications</h2>
                                 <ul className="XpDescrip">
+                                    <li><a target="_blank" href="https://drive.google.com/file/d/1_e2s1MFWT9CmrsQylvAt1iIivtZJaMQs/view?usp=sharing" style={{ color: "dodgerblue" }}>AWS Certified Cloud Practitioner</a></li>
                                     <li><a target="_blank" href="https://drive.google.com/file/d/10gUvzAh5u-311tXYVSQo0zmjoiNDZePl/view?usp=sharing" style={{ color: "dodgerblue" }}>Work Fusion Power User</a></li>
                                 </ul>
                             </div>
