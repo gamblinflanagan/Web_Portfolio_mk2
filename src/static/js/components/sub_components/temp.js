@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 import "../style.css";
+import Nav from "./nav.js";
 /*
 function usewindowSize () {
     const [size, setSize] = useState([window.innerHeight]);
@@ -45,6 +46,7 @@ function ChangeVis() {
 const Temp = () => {
     return (
         <div className="Contact">
+            {/*
             <div className="Nav">
                 <div className="Menu">
                     <button className="nav-button" onClick={ChangeVis} >
@@ -53,12 +55,6 @@ const Temp = () => {
                             <hr />
                             <hr />
                         </div>
-                        {/*
-                        <div className="xlines" id="x" style={{ display: "none" }}>
-                            <hr id="topx"/>
-                            <hr id="bottomx"/>
-                        </div>
-                        */}
                     </button>
                 </div>
                 <div className="buttons" id="navButtons">
@@ -83,7 +79,7 @@ const Temp = () => {
                         </Button>
                     </Link>
                 </div>
-                {/* second class to be deleted in future update */}
+                
                 <div className="buttons" id="mNavButtons" style={{ display: "none" }}>
                     
                     <button className="x-button" onClick={ChangeVis} id="x" style={{ display: "none" }}>
@@ -99,44 +95,31 @@ const Temp = () => {
                             Home
                         </Button>
                     </Link>
-                    <Link className="links" to='/about'>
+                    <Link className="mlinks" to='/about'>
                         <Button className="login-button">
                             Resume
                         </Button>
                     </Link>
-                    <Link className="links" to='/projects'>
+                    <Link className="mlinks" to='/projects'>
                         <Button className="login-button">
                             Projects
                         </Button>
                     </Link>
-                    <Link className="links" to='/contact'>
+                    <Link className="mlinks" to='/contact'>
                         <Button className="login-button">
                             Contact
                         </Button>
                     </Link>
                 </div>
             </div>
-            
-            <Container id="ContactContent" className="Scroll">
+        */}
+    
+            <Nav />    
+            <Container id="Content" className="Scroll">
                 <Row>
                     <Col md>
                         <div className="ContactContainer">
-                            <h1>Let's Get In Touch</h1>
-                            <h5>Cell: (973) 570-2383</h5>
-                            <h5>Voice: (862) 855-2657</h5>
-                            <h5>Email: jcf29@njit.edu</h5>
-                            <h2>Social Media</h2>
-                            <div className="Social">
-                                <h5>
-                                    <a target="_blank" href="https://www.linkedin.com/in/joseph-flanagan-jr-728586103/">Linkedin</a>
-                                </h5>
-                                <h5>
-                                    <a target="_blank" href="https://github.com/gamblinflanagan/">Github</a>
-                                </h5>
-                                <h5>
-                                    <a target="_blank" href="https://my.indeed.com/p/josephf-2ahol8e">Indeed</a>
-                                </h5>
-                            </div>
+                            <h1>TEMP PAGE</h1>
                         </div>
                     </Col>
                 </Row>

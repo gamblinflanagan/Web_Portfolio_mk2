@@ -5,6 +5,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 
 import profile from "../../images/Linkedin.png";//"../../images/slack.png";
 import "./style.css";
+import Nav from "./sub_components/nav.js";
 
 
 /*
@@ -20,7 +21,7 @@ function usewindowSize () {
 
     return size;
 }
-*/
+
 
 function ChangeVis() {
     const content = document.getElementById("HomeContent");
@@ -42,7 +43,7 @@ function ChangeVis() {
         menu.addEventListener('click', () => {
             navlinks.classList.toggle("open");
         });
-        */
+        *
     }
     else {
 
@@ -55,7 +56,7 @@ function ChangeVis() {
         menu.addEventListener('click', () => {
             navlinks.classList.toggle("open");
         });
-        */
+        *
     }
 }
     /*
@@ -72,81 +73,8 @@ const link = "https://i.pinimg.com/originals/20/ae/f2/20aef23d39a8dcb74bf663ed89
 const MainComponent = () => {
     return (
         <div className="Home">
-            <div className="Nav">
-                <div className="Menu">
-                    <button className="nav-button" onClick={ChangeVis} >
-                        <div id="nav">
-                            <hr id="topline"/>
-                            <hr />
-                            <hr />
-                        </div>
-                        {/*
-                        <div className="xlines" id="x" style={{ display: "none" }}>
-                            <hr id="topx"/>
-                            <hr id="bottomx"/>
-                        </div>
-                        */}
-                    </button>
-                </div>
-                <div className="buttons" id="navButtons">
-                    <Link className="links" to='/'>
-                        <Button className="login-button">
-                            Home
-                        </Button>
-                    </Link>
-                    <Link className="links" to='/about'>
-                        <Button className="login-button">
-                            Resume
-                        </Button>
-                    </Link>
-                    <Link className="links" to='/projects'>
-                        <Button className="login-button">
-                            Projects
-                        </Button>
-                    </Link>
-                    <Link className="links" to='/contact'>
-                        <Button className="login-button">
-                            Contact
-                        </Button>
-                    </Link>
-                </div>
-                {/* second class to be deleted in future update */}
-                <div className="buttons" id="mNavButtons" style={{ display: "none" }}>
-                    
-                    <button className="x-button" onClick={ChangeVis} id="x" style={{ display: "none" }}>
-                        <div className="xlines">
-                            <hr id="topx"/>
-                            <hr id="bottomx"/>
-                        </div>
-                    </button>
-                   
-                   
-                    
-                    <Link className="links-top"  to='/'>
-                        <Button className="login-button">
-                            Home
-                        </Button>
-                    </Link>
-                    <Link className="mlinks" to='/about'>
-                        <Button className="login-button">
-                            Resume
-                        </Button>
-                    </Link>
-                    <Link className="mlinks" to='/projects'>
-                    <   Button className="login-button">
-                            Projects
-                        </Button>
-                    </Link>
-                    <Link className="mlinks" to='/contact'>
-                        <Button className="login-button">
-                            Contact
-                        </Button>
-                    </Link>
-                </div>
-            </div> 
-
-           
-            <Container id="HomeContent" className="Scroll">
+            <Nav />
+            <Container id="Content" className="Scroll">
                 <Row>
                     <Col md>
                         <div className="HomeContainer">

@@ -9,7 +9,7 @@ import MainComponent from "./components/MainComponent";
 import AboutComponent from "./components/AboutComponent";
 import ProjectsComponent from "./components/ProjectsComponent";
 import ContactComponent from "./components/ContactComponent";
-import Temp from "./components/project_pages/temp";
+import Temp from "./components/sub_components/temp";
 
 
 export default function MainPage() {
