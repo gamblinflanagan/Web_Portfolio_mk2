@@ -102,16 +102,16 @@ such as Selenium, Protractor, Katalon, Cucumber, etc.</li>
                                 <h4>Selective Insurance</h4>
                                 <h5>Seasonal Support in Application Delivery</h5>
                                 <ul className="XpDescrip">
-                                    <li>Help team design build and update any Corporate Systems applications.</li>
+                                    <li>Team member to design build and update any Corporate Systems applications.</li>
                                     <li>Provide support for future RPA projects.</li>
-                                    <li>Foster Sense of collaboration, demonstrate self-awareness and understand company strategy, and drive
+                                    <li>Foster  a sense of collaboration, demonstrate self-awareness and understand company strategy, and drive
 business forward by making sound decisions and developing creative solutions.</li>
                                 </ul>
                                 <h4>Kashmir World Foundation</h4>
                                 <h5>Ai Engineer-Machine Learning Intern</h5>
                                 <ul className="XpDescrip">
-                                    <li>Use Deep Learning algorithms for surveillance drones to help create a map of snow leopards’ habitat based on
-their behavior.</li>
+                                    <li>Work with deep learning algorithms and AI image recognition software</li>
+                                    <li>Train AI with datasets to recognize snow leopards for surveillance drones</li>
                                 </ul>
                                
                                 <h2>Certifications</h2>
