@@ -88,6 +88,19 @@ my ability whichever equipment is not.</li>
                                     <li>Handle any disputes between employees and clients in a professional and personable manner</li>
                                     <li>Provide Support for all and train newer employees</li>
                                 </ul>*/}
+                                <h4>Vonage</h4>
+                                <h5>Front End Software Engineer</h5>
+                                <ul className="XpDescrip">
+                                    <li>Independently design, develop, test and document moderately complex software systems and applications.</li>
+                                    <li>Collaborate with analysts, peers and other stakeholders on projects to develop highly complex systems.</li>
+                                    <li>Estimate software development tasks within predictable variances, ensuring alignment with specified functional and business requirements.</li>
+                                    <li>Handle multiple priorities and interruptions in DevOps environment and prioritize their own work while taking team and business needs into account.</li>
+                                    <li>Write end-to-end automated tests to provide code coverage for business-critical components.</li>
+                                    <li>Ensure quality, performance and adherence to established specifications.</li>
+                                    <li>Envision innovating disruptive technologies, sell your ideas and collaborate with in-house experts to bring your vision to life.</li>
+                                    <li>Work with the latest technologies.</li>
+                                </ul>
+
                                 <h4>IBM</h4>
                                 <h5>Automation Test Specialist</h5>
                                 <ul className="XpDescrip">
