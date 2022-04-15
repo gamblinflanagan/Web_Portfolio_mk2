@@ -83,7 +83,7 @@ const MainComponent = () => {
                             <div className="Content">
                                 <img id="profile" src={profile} />
                                 <p>
-                                    I am Joey Flanagan. I am an <a target="_blank" href="https://www.njit.edu">NJIT</a> alumnus and currently an Automation Test Engineer at IBM as well as a freelance web developer.
+                                    I am Joey Flanagan. I am an <a target="_blank" href="https://www.njit.edu">NJIT</a> alumnus and currently a Front End Software Engineer at Vonage as well as a freelance web developer.
                                     More About Me in the <Link id="more" to='/about'>Resume Page</Link>
                                 </p>
                             </div> 
