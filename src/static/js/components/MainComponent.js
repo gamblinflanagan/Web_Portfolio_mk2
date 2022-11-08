@@ -83,7 +83,7 @@ const MainComponent = () => {
                             <div className="Content">
                                 <img id="profile" src={profile} />
                                 <p>
-                                    I am Joey Flanagan. I am an <a target="_blank" href="https://www.njit.edu">NJIT</a> alumnus and currently a Front End Software Engineer at <a target="blank" href="https://www.vonage.com">Vonage</a> as well as a Consultant developer for <a target="blank" href="https://hermes-group-b565d.web.app">Hermes Group</a>.
+                                    I am Joey Flanagan. I am an <a target="_blank" href="https://www.njit.edu">NJIT</a> alumnus and currently a Front End Software Engineer at <a target="blank" href="https://www.vonage.com">Vonage</a> as well as a Consultant developer for <a target="blank" href="https://hermes-group-llc.com">Hermes Group</a>.
                                     More About Me in the <Link id="more" to='/about'>Resume Page</Link>
                                 </p>
                             </div> 
