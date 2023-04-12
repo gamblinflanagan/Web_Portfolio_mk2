@@ -21,7 +21,7 @@ const ContactComponent = () => {
                         <div className="ContactContainer">
                             <h1>Let's Get In Touch</h1>
                             <h5>Cell: (973) 570-2383</h5>
-                            <h5>Voice: (862) 855-2657</h5>
+                            <h5>Voice: (862) 955-2657</h5>
                             <h5>Email: jcf29@njit.edu</h5>
                             <h2>Social Media</h2>
                             <div className="Social">
