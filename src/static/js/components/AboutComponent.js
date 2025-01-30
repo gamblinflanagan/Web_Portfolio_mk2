@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import "./style.css";
 import Nav from "./sub_components/nav.js";
@@ -35,12 +35,11 @@ const AboutComponent = () => {
                             <div className="ResumeSummary">
                                 <h2>About me</h2>
                                 <p>
-                                I am currently an Automation Test Specialist at IBM as well as a freelance web developer. I have a Bachelor of Science degree in Computer
+                                I am currently a front end software engineer. I have a Bachelor of Science degree in Computer
 Science from the <a target="_blank" href="https://www.njit.edu">New Jersey Institute of Technology. </a> During my curriculum I gained key
 knowledge and experience in the field of Computer Science, and I became effective at
 self-learning, adapting to any new changes, analyzing the situation and communicating
 proactively to ensure not just success on my part, but success for the project as a whole.
-Currently my strongest technical skills are Python, and React js
                                 </p>
                                 <h2>Education</h2>
                                 <p>
@@ -52,15 +51,15 @@ Currently my strongest technical skills are Python, and React js
                                 <ul id="leftskills">
                                     <li>Windows/Mac Os/Linux</li>
                                     <li>Python</li>
-                                    <li>Flask/Django</li>
-                                    <li>HTML/CSS/PHP/JavaScript/XML</li>
-                                    <li>Node.js/React.js/React Native</li>
+                                    <li>Flask, Django</li>
+                                    <li>HTML, CSS/scss/sass, PHP, JavaScript/TypeScript</li>
+                                    <li>Node.js, React/React Native, Next, Redux, Anglar, Vue, Tailwind</li>
                                     <li>REST APIs</li>
                                     <li>mySQL/postgreSQL</li>
                                     <li>Java/Groovy</li>
                                 </ul>
                                 <ul id="rightskills">
-                                    <li>WorkFusion/Selenium</li>
+                                    <li>WorkFusion, Selenium</li>
                                     <li>Robotic Processing Automation (RPA)</li>
                                     <li>Data Structures/Algorithms</li>
                                     <li>C/C++/C#</li>

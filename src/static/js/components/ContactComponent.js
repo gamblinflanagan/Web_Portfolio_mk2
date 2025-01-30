@@ -20,9 +20,9 @@ const ContactComponent = () => {
                     <Col md>
                         <div className="ContactContainer">
                             <h1>Let's Get In Touch</h1>
-                            <h5>Cell: (973) 570-2383</h5>
-                            <h5>Voice: (862) 955-2657</h5>
-                            <h5>Email: jcf29@njit.edu</h5>
+                            <h5>Cell: <a href="tel:+19735702383">(973) 570-2383</a></h5>
+                            <h5>Voice: <a href="tel:+18629552657">(862) 955-2657</a></h5>
+                            <h5>Email: <a target="_blank" href="mailto:joeyflanagan97@gmail.com">joeyflanagan97@gmail.com</a></h5>
                             <h2>Social Media</h2>
                             <div className="Social">
                                 <h5>
@@ -31,9 +31,9 @@ const ContactComponent = () => {
                                 <h5>
                                     <a target="_blank" href="https://github.com/gamblinflanagan/">Github</a>
                                 </h5>
-                                <h5>
+                                {/* <h5>
                                     <a target="_blank" href="https://my.indeed.com/p/josephf-2ahol8e">Indeed</a>
-                                </h5>
+                                </h5> */}
                             </div>
                         </div>
                     </Col>

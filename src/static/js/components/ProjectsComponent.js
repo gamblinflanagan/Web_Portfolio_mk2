@@ -8,6 +8,12 @@ import Nav from "./sub_components/nav.js";
 
 const leftProjects = [
     {
+        link: "https://skylinemanorholdings.com/#/",
+        title: "Skyline Manor Holdings",
+        video: "",
+        descrip: "I was the sol developer for an airbnb business tasked with creating their company website"
+    },
+    {
         link: "https://github.com/gamblinflanagan/Alarm-Clock",
         title: "Alarm Clock",
         video: "https://drive.google.com/file/d/1tG5X7ZEjV32QcS-5zpbjmydlMfrDcDV0/preview",
