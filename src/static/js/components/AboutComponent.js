@@ -9,6 +9,33 @@ import Nav from "./sub_components/nav.js";
 const AboutComponent = () => {
 
    //const height = usewindowSize();
+   const techSkills = [ "JavaScript, TypeScript", "HTML", "CSS/SCSS/SASS", "Tailwind", "node.js, NPM, yarn", "React", "Next",
+    "React Native, Expo", "Redux", "Angular", "Vue", "REST APIs", "Python", "Flask, Django", "Java", "mySQL/postgreSQL", "jenkins", "git, github, gitlab"
+   ];
+
+   const softSkills = [ "Software Architecture & Design", "Cloud Platforms", "Continuous Integration", "Continuous Deployment (CI/CD)", "Version Control Systems",
+    "Database Management", "Debugging & Troubleshooting", "Testing & Quality Assurance", "Software Optimization", "Performance Tuning", 
+    "Cross-Functional Team Collaboration", "Stakeholder Communication", "Client Relations", "API Development & Integration", "Project Management", "Dev Ops", "Agile, SCRUM"
+   ];
+
+   const vonageXp = [ "Designed, developed, tested, and documented complex software systems and applications, including integrating Clio, ConnectWise, and Zoho CRMs into the Vonage Business Platform by developing seamless API connections and optimizing data synchronization.",
+    "Identified and resolved a critical system-wide bug affecting core functionalities before it was detected by QA or customers, implementing a robust debugging process that strengthened platform stability and prevented potential service disruptions.",
+    "Designed and implemented a new authentication user interface for JobDiva CRM by aligning with updated security protocols, enhancing login efficiency, and improving compliance with evolving industry standards for user authentication.",
+    "Developed a fully customized user interface for HubSpot CRM to support newly introduced features, refining user interactions, optimizing navigation, and streamlining workflows to enhance operational efficiency for business clients.",
+    "Reduced application defects by 70% through rigorous debugging, optimizing front-end code, and implementing automated testing strategies, ensuring a more stable, efficient, and user-friendly experience for customers.",
+    "Engineered a secure authorization UI component for the Vonage Contact Center application using Vue.js, enhancing access management, strengthening authentication processes, and ensuring a seamless and intuitive user experience."
+    ];
+   const ibmXp = [ "Designed and developed automated and manual test cases by utilizing tools such as Selenium, Protractor, Katalon, and Cucumber to create robust test data, configure test environments, and enhance software validation processes.",
+    "Identified, analyzed, and documented software defects by conducting extensive testing, diagnosing root causes, and collaborating with development teams to implement effective resolutions that improved overall system functionality.",
+    "Verified applied fixes by executing regression tests, validating software stability, and ensuring test cases produced accurate results before deployment to maintain product integrity and minimize post-release issues.",
+    "Earned the Service Excellence Award for delivering outstanding results on a high-priority Delta project, independently managing all testing responsibilities, resolving critical challenges, and ensuring seamless execution within project timelines."
+    ];
+   const selectiveXp = [ "Designed, built, and enhanced corporate systems applications by developing new features, updating existing functionalities, and ensuring seamless integration with business operations to improve overall system efficiency.",
+    "Developed an RPA-driven business process that automatically checked the status of all internal applications, reducing manual effort, minimizing errors, and improving response times for system maintenance.",
+    "Collaborated with senior developers to design and implement an RPA-based solution that automated the quarterly budget refresh process while resolving race conditions to ensure data accuracy and process reliability."
+    ];
+   const kwfXp = ["Work with deep learning algorithms and AI image recognition software",
+    "Train AI with datasets to recognize snow leopards for surveillance drones"];
 
     return (
         <div className="About">
@@ -35,40 +62,28 @@ const AboutComponent = () => {
                             <div className="ResumeSummary">
                                 <h2>About me</h2>
                                 <p>
-                                I am currently a front end software engineer. I have a Bachelor of Science degree in Computer
-Science from the <a target="_blank" href="https://www.njit.edu">New Jersey Institute of Technology. </a> During my curriculum I gained key
-knowledge and experience in the field of Computer Science, and I became effective at
-self-learning, adapting to any new changes, analyzing the situation and communicating
-proactively to ensure not just success on my part, but success for the project as a whole.
+                                I am a passionate Front-End Software Engineer with a deep commitment to building scalable, efficient, and user-centric applications. With expertise in designing and developing intuitive user interfaces, I focus on creating applications that seamlessly integrate with existing platforms and evolve to meet business needs. My experience spans across a wide range of industries and technologies, including cloud platforms, CI/CD, and third-party system integrations, with a strong emphasis on improving performance, system stability, and optimizing user experience.
                                 </p>
                                 <h2>Education</h2>
                                 <p>
                                     B.S. in Computer Science New Jersey Institute of Technology
                                 </p>   
                             </div>
-                            <div className="ResumeSkills">
+                            <Container>
                                 <h2>All Relevant Skills</h2>
-                                <ul id="leftskills">
-                                    <li>Windows/Mac Os/Linux</li>
-                                    <li>Python</li>
-                                    <li>Flask, Django</li>
-                                    <li>HTML, CSS/scss/sass, PHP, JavaScript/TypeScript</li>
-                                    <li>Node.js, React/React Native, Next, Redux, Anglar, Vue, Tailwind</li>
-                                    <li>REST APIs</li>
-                                    <li>mySQL/postgreSQL</li>
-                                    <li>Java/Groovy</li>
-                                </ul>
-                                <ul id="rightskills">
-                                    <li>WorkFusion, Selenium</li>
-                                    <li>Robotic Processing Automation (RPA)</li>
-                                    <li>Data Structures/Algorithms</li>
-                                    <li>C/C++/C#</li>
-                                    <li>Swift</li>
-                                    <li>Version Control (Git, Github)</li>
-                                    <li>SCRUM</li>
-                                    <li>Agile Methodologies</li>
-                                </ul>
-                            </div>
+                                <Row>
+                                <Col>
+                                {techSkills.map((skill, index) => (
+                                    <h6 key={index}>{skill}</h6>
+                                ))}
+                                </Col>
+                                <Col>
+                                {softSkills.map((skill, index) => (
+                                   <h6 key={index}>{skill}</h6>
+                                ))}
+                                </Col>
+                                </Row>
+                            </Container>
                             <div className="Experience">
                                 <h2>Professional Experience</h2>
                                 {/*<h4>New Jersey Institute of Technology Media Technology Support Services</h4>
@@ -89,43 +104,34 @@ my ability whichever equipment is not.</li>
                                 </ul>*/}
                                 <h4>Vonage</h4>
                                 <h5>Front End Software Engineer</h5>
-                                <ul className="XpDescrip">
-                                    <li>Independently design, develop, test and document moderately complex software systems and applications.</li>
-                                    <li>Collaborate with analysts, peers and other stakeholders on projects to develop highly complex systems.</li>
-                                    <li>Estimate software development tasks within predictable variances, ensuring alignment with specified functional and business requirements.</li>
-                                    <li>Handle multiple priorities and interruptions in DevOps environment and prioritize their own work while taking team and business needs into account.</li>
-                                    <li>Write end-to-end automated tests to provide code coverage for business-critical components.</li>
-                                    <li>Ensure quality, performance and adherence to established specifications.</li>
-                                    <li>Envision innovating disruptive technologies, sell your ideas and collaborate with in-house experts to bring your vision to life.</li>
-                                    <li>Work with the latest technologies.</li>
-                                </ul>
+                                {vonageXp.map((xp, index) => (
+                                    <ul className="XpDescrip" key={index}>
+                                        <li>{xp}</li>
+                                    </ul>
+                                ))}
 
                                 <h4>IBM</h4>
                                 <h5>Automation Test Specialist</h5>
-                                <ul className="XpDescrip">
-                                    <li>Design and create tests(automated and manual), test data and test environments using tools
-such as Selenium, Protractor, Katalon, Cucumber, etc.</li>
-                                    <li>Identify, analyze, and document all errors and validate successes for any software solution</li>
-                                    <li>Verify fixes after they are applied to a test system and verifying the results of test cases</li>
-                                    <li>Contribute to the continuous improvement of processes</li>
-                                    <li>Analyze and present test results to clients and project teams clearly</li>
-                                </ul>
+                                {ibmXp.map((xp, index) => (
+                                    <ul className="XpDescrip" key={index}>
+                                        <li>{xp}</li>
+                                    </ul>
+                                ))}
 
                                 <h4>Selective Insurance</h4>
                                 <h5>Seasonal Support in Application Delivery</h5>
-                                <ul className="XpDescrip">
-                                    <li>Team member to design build and update any Corporate Systems applications.</li>
-                                    <li>Provide support for future RPA projects.</li>
-                                    <li>Foster  a sense of collaboration, demonstrate self-awareness and understand company strategy, and drive
-business forward by making sound decisions and developing creative solutions.</li>
-                                </ul>
+                                {selectiveXp.map((xp, index) => (
+                                    <ul className="XpDescrip" key={index}>
+                                        <li>{xp}</li>
+                                    </ul>
+                                ))}
                                 <h4>Kashmir World Foundation</h4>
                                 <h5>Ai Engineer-Machine Learning Intern</h5>
-                                <ul className="XpDescrip">
-                                    <li>Work with deep learning algorithms and AI image recognition software</li>
-                                    <li>Train AI with datasets to recognize snow leopards for surveillance drones</li>
-                                </ul>
-                               
+                                {kwfXp.map((xp, index) => (
+                                    <ul className="XpDescrip" key={index}>
+                                        <li>{xp}</li>
+                                    </ul>
+                                ))}
                                 <h2>Certifications</h2>
                                 <ul className="XpDescrip">
                                     <li><a target="_blank" href="https://drive.google.com/file/d/1_e2s1MFWT9CmrsQylvAt1iIivtZJaMQs/view?usp=sharing" style={{ color: "dodgerblue" }}>AWS Certified Cloud Practitioner</a></li>
